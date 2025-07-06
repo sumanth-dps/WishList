@@ -6,8 +6,6 @@ const dotenv = require("dotenv");
 const wishlists = require("./routes/wishlists");
 dotenv.config();
 
-const serviceAccount = require("./serviceAccountKey.json");
-
 // admin.initializeApp({
 //   credential: admin.credential.cert(serviceAccount),
 // });
