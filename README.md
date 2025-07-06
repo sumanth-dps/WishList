@@ -1,4 +1,14 @@
-Live server link ->  https://wish-list-frontend.vercel.app
+## 🔗 Live URL
+
+[https://wish-list-frontend.vercel.app](https://wish-list-frontend.vercel.app) ![Screenshot 2025-07-06 220326](https://github.com/user-attachments/assets/58185bfe-2d9e-43f6-af44-b32ac2faca20)
+![Screenshot 2025-07-06 220301](https://github.com/user-attachments/assets/32620405-9b7b-421b-8b0a-38452810eead)
+![Screenshot 2025-07-06 220221](https://github.com/user-attachments/assets/86dc2b12-1ab7-4d39-a95f-b93d925bc84a)
+![Screenshot 2025-07-06 220209](https://github.com/user-attachments/assets/b9661144-2783-470a-8170-bed98ae6ab6a)
+![Screenshot 2025-07-06 220157](https://github.com/user-attachments/assets/03f8ddb9-37a7-4ec0-892c-d50937269000)
+![Screenshot 2025-07-06 220140](https://github.com/user-attachments/assets/0245a3f2-2649-4945-a5cf-034b37b8d951)
+![Screenshot 2025-07-06 215541](https://github.com/user-attachments/assets/2539b9fd-208d-4647-a35f-20246055fdf3)
+
+
 # 🎁 Shared Wishlist App – Frontend
 
 This is the frontend for the **Shared Wishlist App**, built with **React**, **Vite**, **Tailwind CSS**, and **Firebase Authentication**.
@@ -10,11 +20,7 @@ Users can:
 - 👥 Share wishlists with others
 - 🎉 React to products with emojis
 
----
 
-## 🔗 Live URL
-
-[https://wish-list-frontend.vercel.app](https://wish-list-frontend.vercel.app)  
 _(replace this with your deployed Vercel link)_
 
 ---
@@ -106,7 +112,38 @@ _(replace this with your deployed backend URL)_
 ```bash
 git clone https://github.com/your-username/wishlist-backend.git
 cd wishlist-backend
-
+---
 ## Install dependencies
 
 npm install
+
+PORT=5000
+MONGO_URI=your_mongodb_uri
+---
+## Create .env file
+
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_CLIENT_EMAIL=your_firebase_admin_email
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\\nLINE1\\nLINE2\\n...\\n-----END PRIVATE KEY-----\\n"
+---
+## Run the server
+node index.js
+##🔐 Authentication
+All routes are protected by Firebase Auth.
+Send the token in the headers like: Authorization: Bearer <firebase_id_token>
+
+
+##🌐 Deployment (Render)
+Push code to GitHub
+
+Create a new Web Service on render.com
+
+Use:
+
+Build command: npm install
+
+Start command: node index.js
+
+Add all environment variables from .env to the Render Dashboard
+
+
